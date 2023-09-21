@@ -1,1 +1,6 @@
-@import './root.css'
+@import './root.css';
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
