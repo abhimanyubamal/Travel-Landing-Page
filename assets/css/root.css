@@ -14,3 +14,15 @@
     --font-color-secondary: #5B5F62;
     --font-color-nav-links: #2E476B;
 }
+
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+html{
+    background-color: var(--bg-color);
+}
