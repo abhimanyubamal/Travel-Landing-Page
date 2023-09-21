@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700&display=swap');
+
 :root{
     --max-width: 1440px;
     --bg-color: #FAF8ED;
@@ -13,6 +15,7 @@
     --font-color-primary: #2D3134;
     --font-color-secondary: #5B5F62;
     --font-color-nav-links: #2E476B;
+    --nav-links-margin: 36px;
 }
 
 *{
