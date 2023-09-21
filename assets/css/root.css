@@ -1,0 +1,16 @@
+:root{
+    --max-width: 1440px;
+    --bg-color: #FAF8ED;
+    --font-primary: 'Sen';
+    --font-secondary: 'Inter';
+    --font-nav-links: 'Poppins';
+    --fs-xxl: 84px;
+    --fs-xl: 56px;
+    --fs-lg: 26px;
+    --fs-md: 18px;
+    --fs-sm: 16px;
+    --fs-xsm: 12px;
+    --font-color-primary: #2D3134;
+    --font-color-secondary: #5B5F62;
+    --font-color-nav-links: #2E476B;
+}
