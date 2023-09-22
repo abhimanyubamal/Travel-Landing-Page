@@ -3,21 +3,27 @@
 :root{
     --max-width: 1440px;
     --bg-color: #FAF8ED;
+    /* FONT-FAMILY */
     --font-primary: 'Sen';
     --font-secondary: 'Inter';
     --font-nav-links: 'Poppins';
+    /* FONT-SIZE */
     --fs-xxl: 84px;
     --fs-xl: 56px;
     --fs-lg: 26px;
     --fs-md: 18px;
     --fs-sm: 16px;
     --fs-xsm: 12px;
+    /* COLORS */
     --font-color-primary: #2D3134;
     --font-color-secondary: #5B5F62;
     --font-color-nav-links: #2E476B;
+    /* MARGINS */
     --nav-links-margin: 36px;
     --header-padding-bottom: 54px;
     --header-main-margin: 80px;
+    /* TRANSITION */
+    --transition-speed: 300ms;
 }
 
 *{
