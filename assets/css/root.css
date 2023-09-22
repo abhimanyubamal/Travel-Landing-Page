@@ -22,6 +22,8 @@
     --nav-links-margin: 36px;
     --header-padding-bottom: 54px;
     --header-main-margin: 80px;
+    /* PADDING */
+    --section-1-padding-bottom: 32px;
     /* TRANSITION */
     --transition-speed: 300ms;
 }
