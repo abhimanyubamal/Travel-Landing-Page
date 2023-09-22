@@ -1,17 +1,17 @@
 @import './root.css';
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
 }
 
-nav{
+nav {
     padding: 24px 0;
 }
 
-.nav-links{
+.nav-links {
     margin-right: var(--nav-links-margin);
     color: var(--font-color-nav-links);
     font-family: var(--font-nav-links), sans-serif;
@@ -19,7 +19,7 @@ nav{
     position: relative;
 }
 
-.nav-links::after{
+.nav-links::after {
     content: "";
     height: 2px;
     background-color: #F66F4D;
@@ -32,11 +32,12 @@ nav{
     pointer-events: none;
 }
 
-.nav-links:hover::after, .nav-links:focus::after{
+.nav-links:hover::after,
+.nav-links:focus::after {
     opacity: 1;
 }
 
-.nav-button{
+.nav-button {
     font-family: var(--font-nav-links), sans-serif;
     font-size: var(--fs-sm);
     color: #F66F4D;
@@ -47,108 +48,111 @@ nav{
     transition: all var(--transition-speed);
 }
 
-.nav-button:hover{
+.nav-button:hover {
     background-color: #F66F4D;
     color: var(--bg-color);
     border-color: var(--bg-color);
 }
 
-svg>path{
+svg>path {
     transition: all var(--transition-speed);
 }
 
-.nav-button:hover svg>path{
+.nav-button:hover svg>path {
     fill: var(--bg-color);
 }
 
-.mt-24{
+.mt-24 {
     margin-top: 24px;
 }
 
-.mt-44{
+.mt-44 {
     margin-top: 44px;
 }
 
-.hero-section-heading{
+.hero-section-heading {
     font-family: var(--font-primary), sans-serif;
     font-size: var(--fs-xxl);
     color: var(--font-color-primary);
 }
 
-.hero-section-para{
+.hero-section-para {
     font-family: var(--font-secondary), sans-serif;
     font-size: var(--fs-md);
     color: var(--font-color-secondary);
     max-width: 90%;
 }
 
-.hero-section-search-menu{
+.hero-section-search-menu {
     border-radius: 38px;
     background-color: #FDFEFF;
     padding: 11px 16px 11px 28px;
     max-width: 90%;
 }
 
-label{
+header label {
     display: block;
     font-family: var(--font-secondary), sans-serif;
     font-size: var(--fs-md);
     color: var(--font-color-primary);
 }
 
-label, input{
+header label,
+header input {
     width: 75%;
     border: none;
 }
 
-input:focus{
+header input:focus {
     outline: none;
 }
 
-input::placeholder{
+header input::placeholder {
     font-family: var(--font-secondary), sans-serif;
     font-weight: 400;
     font-size: var(--fs-xsm);
     color: #9498A4;
 }
 
-.form-1{
+.form-1 {
     border-right: 1px solid #EAEAEB;
 }
 
-header{
+header {
     padding-bottom: var(--header-padding-bottom);
 }
 
-main{
+main {
     margin-top: var(--header-main-margin);
 }
 
-h2{
+h2 {
     font-family: var(--font-secondary), sans-serif;
     font-size: var(--fs-xl);
     color: var(--font-color-primary);
 }
 
-#section-1{
+#section-1 {
     padding-bottom: var(--section-1-padding-bottom);
 }
 
-#section-1 p{
+#section-1 p {
     font-family: var(--font-secondary), sans-serif;
     color: var(--font-color-secondary);
     font-size: var(--fs-sm);
     width: 33%;
 }
 
-.section-1-next svg{
+.section-1-next svg {
     transform: rotate(180deg);
 }
 
-.section-1-prev{
+.section-1-prev {
     margin-right: 16px;
 }
-.section-1-next, .section-1-prev{
+
+.section-1-next,
+.section-1-prev {
     padding: 16px 21px 19px 21px;
     border-radius: 50%;
     border: 1px solid transparent;
@@ -157,25 +161,27 @@ h2{
 }
 
 .section-1-next svg>path,
-.section-1-prev svg>path{
+.section-1-prev svg>path {
     stroke: var(--bg-color);
     transition: all var(--transition-speed);
 }
 
-.section-1-next:hover svg>path, .section-1-prev:hover svg>path{
+.section-1-next:hover svg>path,
+.section-1-prev:hover svg>path {
     stroke: var(--font-color-primary);
 }
 
-.section-1-next:hover, .section-1-prev:hover{
+.section-1-next:hover,
+.section-1-prev:hover {
     background-color: var(--bg-color);
     border-color: var(--font-color-primary);
 }
 
-.slider-1-img{
+.slider-1-img {
     border-radius: 85px;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
     height: 100%;
@@ -191,7 +197,7 @@ h2{
     opacity: 1;
 }
 
-.image-box-text{
+.image-box-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -203,12 +209,74 @@ h2{
     transition: all var(--transition-speed);
 }
 
-.image-box:hover .image-box-text{
+.image-box:hover .image-box-text {
     opacity: 1;
 }
 
-.image-box-span{
+.image-box-span {
     font-family: var(--font-secondary), sans-serif;
     font-size: var(--fs-lg);
     color: var(--font-color-primary);
+}
+
+#section-6 {
+    margin-top: var(--section-5-6-margin);
+    padding: var(--section-6-padding) 0;
+}
+
+.yellow-box {
+    background-color: #FFD482;
+    padding: 75px 0;
+    border-radius: 30px;
+}
+
+#section-6 h3 {
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 40px;
+    color: var(--font-color-primary);
+}
+
+#section-6 p {
+    width: 37%;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: var(--fs-sm);
+    color: var(--font-color-secondary);
+}
+
+.email::placeholder{
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--font-color-secondary);
+    opacity: 0.4;
+}
+
+.email{
+    width: 90%;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.email:focus{
+    outline: none;
+}
+
+.search-box{
+    width: 40%;
+    background-color: #FFFFFF;
+    padding: 10px 12px 0px 26px;
+    border-radius: 12px;
+}
+
+.white-lines{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+footer{
+    margin-top: var(--footer-margin);
+    padding-bottom: var(--footer-padding);
+    padding-top: var(--footer-padding);
 }
