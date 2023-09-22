@@ -1,1 +1,93 @@
-@import './root.css'
+@import './root.css';
+
+
+.S2-head {
+    color: #F66F4D;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 4px;
+}
+
+.S2-main-head {
+    color: var(--font-color-primary);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 66px;
+}
+
+.S2-para {
+    color: var(--font-color-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.S2-box-head {
+    color: #F66F4D;
+    font-family: var(--font-secondary);
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+.S2-box {
+    padding: 28px;
+    border-radius: 14px;
+}
+
+.S2-box-para {
+    color: #939597;
+    font-family: var(--font-secondary);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.S3-head {
+    max-width: 400px;
+    color: var(--font-color-primary);
+    font-family: var(--font-color-secondary);
+    font-size: var(--fs-xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 66px;
+    text-transform: capitalize;
+}
+
+.card1{
+    padding: 12px;
+    background-color: #fff;
+    max-width: 386px;
+    
+}
+
+.S3-img-radius{
+    border-radius: 16px;
+}
+
+/* .S4-head {
+    color: var(--font-color-primary);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 66px;
+}
+
+.S4-para {
+    color: var(--font-color-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+} */
