@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700&display=swap');
 
-:root{
+:root {
     --max-width: 1440px;
     --bg-color: #FAF8ED;
     /* FONT-FAMILY */
@@ -22,18 +22,23 @@
     --nav-links-margin: 36px;
     --header-padding-bottom: 54px;
     --header-main-margin: 80px;
+    --section-5-6-margin: 28px;
+    --footer-margin: 16px;
     /* PADDING */
     --section-1-padding-bottom: 32px;
+    --section-6-padding: 46px;
+    --footer-padding: 80px;
     /* TRANSITION */
     --transition-speed: 300ms;
 }
 
-*{
+* {
     box-sizing: border-box !important;
     text-decoration: none !important;
     list-style-type: none !important;
 }
 
-html, body{
+html,
+body {
     background-color: var(--bg-color);
 }
