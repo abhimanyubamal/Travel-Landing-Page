@@ -8,23 +8,38 @@ $('.slider-1').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true
+                infinite: true
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true
+            }
+        },
+        {
+            breakpoint: 576,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 300,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -48,26 +63,25 @@ $('.destination-slider').slick({
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true
+                infinite: true
             }
         },
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                autoplay: true,
             }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+            
         }
+        // {
+        //     breakpoint: 480,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1
+        //     }
+        // }
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
@@ -77,4 +91,27 @@ $('.destination-slider').slick({
 $('.S5-slider').slick({
     prevArrow: ".section-5-prev",
     nextArrow: ".section-5-next",
+});
+
+// NavBar
+let navIcon = document.querySelector(".menu-icon");
+let navMenu = document.querySelector("#nav-menu");
+let navFlag = 0;
+
+navIcon.addEventListener("click", () => {
+    navIcon.classList.toggle("active");
+    document.body.classList.toggle("overflow-y-hidden");
+    if (navFlag === 0)
+    {
+        navMenu.style.right = 0;
+        navMenu.style.visibility = "visible";
+        navMenu.style.opacity = 1;
+        navFlag++;
+    }
+    else {
+        navMenu.style.right = "-100%";
+        navMenu.style.visibility = "hidden";
+        navMenu.style.opacity = 0;
+        navFlag--;
+    }
 });
