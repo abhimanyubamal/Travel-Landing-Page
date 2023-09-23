@@ -39,7 +39,7 @@ $('.slider-1').slick({
             }
         },
         {
-            breakpoint: 300,
+            breakpoint: 370,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -67,13 +67,6 @@ $('.destination-slider').slick({
                 slidesToScroll: 1,
                 infinite: true
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                autoplay: true,
-            }
-            
         }
         // {
         //     breakpoint: 480,

@@ -143,7 +143,7 @@ h2 {
     width: 33%;
 }
 
-.slider-1{
+.slider-1 {
     margin-top: 60px;
 }
 
@@ -290,13 +290,17 @@ footer ul a:hover {
     -webkit-text-stroke: 1px #676A6C;
 }
 
+.search-svg{
+    cursor: pointer;
+}
+
 .search-svg rect,
 path {
     transition: all var(--transition-speed);
 }
 
 .search-svg:hover rect {
-    fill: var(--bg-color);
+    fill: white;
     stroke: #F66F4D;
 }
 
@@ -370,9 +374,9 @@ path {
 .card1 {
     padding: 12px 12px 36px 12px;
     border-radius: 16px;
-        border: 2px solid #FFF;
-        background: #FAF8ED;
-        box-shadow: 0px 24px 90px 0px rgba(192, 188, 161, 0.22);
+    border: 2px solid #FFF;
+    background: #FAF8ED;
+    box-shadow: 0px 24px 90px 0px rgba(192, 188, 161, 0.22);
     width: 100%;
     height: 100%;
     margin: 0 15px;
@@ -478,24 +482,24 @@ path {
     line-height: 14px;
 }
 
-#section-2{
+#section-2 {
     padding: var(--section-2-padding) 0;
     margin-top: var(--section-1-2-margin);
 }
 
-#section-3{
+#section-3 {
     margin-top: var(--section-3-2-margin);
     padding: var(--section-3-padding) 0;
 }
 
-#section-4{
+#section-4 {
     margin-top: var(--section-4-3-margin);
     padding: var(--section-4-padding) 0;
 }
 
-#section-5{
+#section-5 {
     margin-top: var(--section-5-4-margin);
-        padding: var(--section-5-padding) 0;
+    padding: var(--section-5-padding) 0;
 }
 
 .slider-rate {
@@ -751,15 +755,22 @@ path {
 /* RESPONSIVE */
 @media (max-width: 992px) {
     :root {
-        /* MARGINS */
-        --header-main-margin: 65px;
-        --section-5-6-margin: 20px;
-        --footer-margin: 14px;
         /* PADDING */
-        --header-padding-bottom: 30px;
-        --section-1-padding-bottom: 24px;
-        --section-6-padding: 38px;
-        --footer-padding: 54px;
+        --section-1-padding-bottom: 24px !important;
+        --section-2-padding: 42px !important;
+        --section-3-padding: 42px !important;
+        --section-4-padding: 29px !important;
+        --section-5-padding: 58px !important;
+        --section-6-padding: 38px !important;
+        --header-padding-bottom: 46px !important;
+        --footer-padding: 60px !important;
+        /* FONT-SIZE */
+        --fs-xxl: 76px !important;
+        --fs-xl: 52px !important;
+        --fs-lg: 24px !important;
+        --fs-md: 17px !important;
+        --fs-sm: 15px !important;
+        --fs-xsm: 11px !important;
     }
 
     .menu {
@@ -882,14 +893,43 @@ path {
         grid-column: 3/6;
     }
 
-        .hero-section-search-menu{
-            max-width: 100%;
-            padding: 11px 8px 11px 28px;
-            margin-bottom: 24px;
-        }
+    .hero-section-search-menu {
+        max-width: 100%;
+        padding: 11px 8px 11px 28px;
+        margin-bottom: 24px;
+    }
+
+    #section-1 p,
+    #section-6 p,
+    .search-box {
+        width: 50% !important;
+    }
+
+    .footer-group-svg{
+        margin-top: 32px !important;
+    }
 }
 
 @media (max-width: 768px) {
+
+    :root {
+        /* PADDING */
+        --section-1-padding-bottom: 16px !important;
+        --section-2-padding: 32px !important;
+        --section-3-padding: 32px !important;
+        --section-4-padding: 20px !important;
+        --section-5-padding: 48px !important;
+        --section-6-padding: 30px !important;
+        --header-padding-bottom: 36px !important;
+        --footer-padding: 50px !important;
+        /* FONT-SIZE */
+        --fs-xxl: 68px !important;
+        --fs-xl: 48px !important;
+        --fs-lg: 22px !important;
+        --fs-md: 16px !important;
+        --fs-sm: 14px !important;
+        --fs-xsm: 10px !important;
+    }
 
     .section-1-next,
     .section-1-prev,
@@ -899,9 +939,38 @@ path {
     .section-5-prev {
         display: none !important;
     }
+
+    #section-1 p,
+    #section-6 p,
+    .search-box {
+        width: 60% !important;
+    }
+
+        .footer-group-svg {
+            margin-top: 24px !important;
+        }
 }
 
 @media (max-width: 576px) {
+
+    :root {
+        /* PADDING */
+        --section-1-padding-bottom: 8px !important;
+        --section-2-padding: 24px !important;
+        --section-3-padding: 24px !important;
+        --section-4-padding: 12px !important;
+        --section-5-padding: 32px !important;
+        --section-6-padding: 22px !important;
+        --header-padding-bottom: 28px !important;
+        --footer-padding: 40px !important;
+        /* FONT-SIZE */
+        --fs-xxl: 62px !important;
+        --fs-xl: 44px !important;
+        --fs-lg: 20px !important;
+        --fs-md: 15px !important;
+        --fs-sm: 13px !important;
+        --fs-xsm: 9px !important;
+    }
 
     /* GRID */
     .g-com:hover>img {
@@ -937,4 +1006,49 @@ path {
         grid-row: 8/9;
         grid-column: 1/2;
     }
+
+    #section-1 p,
+    #section-6 p,
+    .search-box {
+        width: 80% !important;
+    }
+
+    footer ul li{
+        text-align: center;
+    }
+
+        .footer-group-svg {
+            margin-top: 16px !important;
+        }
+}
+
+@media (max-width: 370px) {
+    :root {
+        /* PADDING */
+        --section-1-padding-bottom: 0 !important;
+        --section-2-padding: 12px !important;
+        --section-3-padding: 12px !important;
+        --section-4-padding: 6px !important;
+        --section-5-padding: 16px !important;
+        --section-6-padding: 12px !important;
+        --header-padding-bottom: 14px !important;
+        --footer-padding: 20px !important;
+        /* FONT-SIZE */
+        --fs-xxl: 54px !important;
+        --fs-xl: 40px !important;
+        --fs-lg: 18px !important;
+        --fs-md: 14px !important;
+        --fs-sm: 12px !important;
+        --fs-xsm: 8px !important;
+    }
+
+    #section-1 p,
+    #section-6 p,
+    .search-box {
+        width: 90% !important;
+    }
+
+        .footer-group-svg {
+            margin-top: 8px !important;
+        }
 }
