@@ -401,7 +401,7 @@ path {
     padding: 14px 23px;
     border-radius: 50%;
     border: 1px solid transparent;
-    background-color: var(--bg-color);
+    background-color: transparent;
     transition: all var(--transition-speed);
     border-color: var(--font-color-primary);
 }
@@ -712,11 +712,17 @@ path {
 .S5-buttons {
     position: absolute;
     bottom: 15%;
-    right: 5%;
+    right: 7%;
 }
 
 .S5-slider {
     padding: 12px;
+}
+
+.S5-slider-card{
+    background-color: #fff;
+    padding: 32px 34px 30px 32px;
+    border-radius: 14px;
 }
 
 .S5-slider-name {
